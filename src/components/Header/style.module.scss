@@ -1,0 +1,174 @@
+.headerBox {
+  background-color: var(--green);
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+
+    .titleBox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      animation: down 2s ease;
+
+      > div {
+        height: 18px;
+        width: 18px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: var(--yellow);
+      }
+    }
+    .HamburgerBox {
+      position: relative;
+      > button {
+        line-height: 0;
+        width: 36px;
+        height: 36px;
+        background-color: var(--yellow-2);
+        border: 1px solid transparent;
+        border-radius: 8px;
+        animation: left 2s ease;
+
+        &:hover {
+          background-color: var(--yellow);
+        }
+      }
+
+      .HamburgerNav {
+        position: fixed;
+        right: 13px;
+        top: 70px;
+        padding: 20px 30px;
+        background-color: var(--base);
+        border: 1px solid transparent;
+        border-radius: 4px;
+        animation: navHamb 2s ease;
+
+        > nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+          > a {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 1rem;
+            color: var(--black);
+
+            &:hover {
+              color: var(--yellow);
+            }
+          }
+        }
+      }
+
+      @media (min-width: 530px) {
+        display: none;
+      }
+    }
+    .navBox {
+      display: none;
+      @media (min-width: 530px) {
+        display: inherit;
+
+        > nav {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          animation: left 2s ease;
+
+          > a {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 1rem;
+            color: var(--white);
+
+            &:hover {
+              color: var(--yellow);
+            }
+          }
+          > span {
+            font-family: var(--font-primary);
+            font-weight: 300;
+            line-height: 1.5;
+            font-size: 1rem;
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatey(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes navHamb {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
