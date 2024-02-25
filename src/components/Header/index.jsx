@@ -24,16 +24,22 @@ export const Header = () => {
               {!hiddenMenu && (
                 <div className={styles.HamburgerNav}>
                   <nav>
-                    <a href="">Início</a>
-                    <a href="">Projetos</a>
-                    <a href="">Contato</a>
+                    <a href="#profile" onClick={() => setHiddenMenu(true)}>
+                      Início
+                    </a>
+                    <a href="" onClick={() => setHiddenMenu(true)}>
+                      Projetos
+                    </a>
+                    <a href="" onClick={() => setHiddenMenu(true)}>
+                      Contato
+                    </a>
                   </nav>
                 </div>
               )}
             </div>
             <div className={styles.navBox}>
               <nav>
-                <a href="">Início</a>
+                <a href="#profile">Início</a>
                 <span>|</span>
                 <a href="">Projetos</a>
                 <span>|</span>
