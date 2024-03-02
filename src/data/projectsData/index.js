@@ -1,5 +1,6 @@
 export const projectsData = [
   {
+    id: 1,
     name: "MyContacts Front End",
     description:
       "Projeto Full Stack onde usuários podem gerenciar seus contatos.",
@@ -8,6 +9,7 @@ export const projectsData = [
     deploy: null,
   },
   {
+    id: 2,
     name: "MyContacts API",
     description:
       "Projeto Full Stack onde usuários podem gerenciar seus contatos.",
@@ -16,6 +18,7 @@ export const projectsData = [
     deploy: null,
   },
   {
+    id: 3,
     name: "Kenzie Hub",
     description: "Projeto Front End de rede social de desenvolvedores.",
     techs: ["JavaScript", "React"],
@@ -23,6 +26,7 @@ export const projectsData = [
     deploy: "https://react-entrega-kenzie-hub-miguel-lucio.vercel.app/",
   },
   {
+    id: 4,
     name: "Nu-Kenzie",
     description: "Projeto Front End de gerenciamento de despesas.",
     techs: ["JavaScript", "React"],
@@ -30,6 +34,7 @@ export const projectsData = [
     deploy: "https://react-entrega-s1-nu-kenzie-miguel-lucio.vercel.app/",
   },
   {
+    id: 5,
     name: "Hamburgueria",
     description: "Projeto Front End com foco em consumo de API.",
     techs: ["JavaScript", "React"],
