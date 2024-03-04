@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header";
 import { Profile } from "../../components/Profile";
-import styles from "./style.module.scss";
+import { ProjectList } from "../../components/ProjectList";
 
 export const HomePage = () => {
   return (
@@ -8,6 +8,7 @@ export const HomePage = () => {
       <Header />
       <main>
         <Profile />
+        <ProjectList />
       </main>
     </>
   );
