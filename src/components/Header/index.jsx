@@ -27,7 +27,7 @@ export const Header = () => {
                     <a href="#profile" onClick={() => setHiddenMenu(true)}>
                       Início
                     </a>
-                    <a href="" onClick={() => setHiddenMenu(true)}>
+                    <a href="#projects" onClick={() => setHiddenMenu(true)}>
                       Projetos
                     </a>
                     <a href="" onClick={() => setHiddenMenu(true)}>
@@ -41,7 +41,7 @@ export const Header = () => {
               <nav>
                 <a href="#profile">Início</a>
                 <span>|</span>
-                <a href="">Projetos</a>
+                <a href="#projects">Projetos</a>
                 <span>|</span>
                 <a href="">Contato</a>
               </nav>
