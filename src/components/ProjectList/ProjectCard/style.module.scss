@@ -1,0 +1,53 @@
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 373px;
+  animation: right 2s ease;
+
+  @media (min-width: 600px) {
+    width: auto;
+  }
+
+  .techsContent {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    > li {
+      padding: 4px;
+      border-radius: 4px;
+
+      background-color: var(--base);
+    }
+  }
+
+  .linkBox {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 16px;
+
+    > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+@keyframes right {
+  0% {
+    transform: translatex(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 100%;
+  }
+}
