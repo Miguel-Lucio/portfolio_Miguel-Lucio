@@ -1,0 +1,9 @@
+.footerBox {
+  background-color: var(--green);
+  padding: 60px 0;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
