@@ -1,6 +1,6 @@
-# Portifólio
+# Portfolio
 
-Primeira versão do portfólio
+Primeira versão do portfolio
 
 <h2>Configuração do ambiente</h2>
 
@@ -17,4 +17,4 @@ npm run dev
 ```
 
 Deploy:
-- [Portifólio](https://portifolio-miguel-lucio.vercel.app/)
+- [Portifólio](https://portfolio-miguel-lucio.vercel.app/)
