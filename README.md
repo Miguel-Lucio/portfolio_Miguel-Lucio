@@ -17,4 +17,4 @@ npm run dev
 ```
 
 Deploy:
-- [Portifólio](https://portfolio-miguel-lucio.vercel.app/)
+- [Portfolio](https://portfolio-miguel-lucio.vercel.app/)
