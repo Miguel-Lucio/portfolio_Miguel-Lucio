@@ -17,4 +17,4 @@ npm run dev
 ```
 
 Deply:
-- [Portifólio](https://react-entrega-kenzie-hub-miguel-lucio.vercel.app/)
+- [Portifólio](https://portifolio-miguel-lucio-ajah6xzyo-miguel-lucio.vercel.app)
