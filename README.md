@@ -15,3 +15,6 @@ npm install
 ```shell
 npm run dev
 ```
+
+Deply:
+- [Portifólio](https://react-entrega-kenzie-hub-miguel-lucio.vercel.app/)
