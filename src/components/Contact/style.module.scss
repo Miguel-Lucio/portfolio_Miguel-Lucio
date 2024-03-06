@@ -1,0 +1,110 @@
+.contactBox {
+  background-color: var(--base);
+  border-top: 2px solid var(--yellow);
+  padding: 56px 0;
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media (min-width: 620px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .titleBox {
+      animation: right 2s ease;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      @media (min-width: 620px) {
+        align-items: baseline;
+      }
+    }
+
+    .navBox {
+      animation: left 2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      align-items: center;
+      justify-content: baseline;
+      .iconBox {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 270px;
+        flex-wrap: wrap;
+        .textContent {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          > a {
+            &:hover {
+              color: var(--green);
+            }
+          }
+        }
+
+        .mail,
+        .whatsapp,
+        .linkedin {
+          width: 72px;
+          height: 72px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .mail {
+          background: rgba(189, 59, 155, 1);
+          background: linear-gradient(
+            rgba(189, 59, 155, 1) 20%,
+            rgba(238, 91, 199, 1) 80%
+          );
+        }
+        .linkedin {
+          background: rgba(80, 108, 207, 1);
+          background: linear-gradient(
+            rgba(80, 108, 207, 1) 20%,
+            rgb(78, 115, 255) 80%
+          );
+        }
+        .whatsapp {
+          background: rgba(80, 197, 113, 1);
+          background: linear-gradient(
+            rgba(80, 197, 113, 1) 20%,
+            rgba(80, 207, 154, 1) 80%
+          );
+        }
+      }
+    }
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translatex(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 100%;
+  }
+}
