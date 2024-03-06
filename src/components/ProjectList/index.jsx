@@ -8,7 +8,7 @@ export const ProjectList = () => {
       <div className={styles.listBox}>
         <div className="container horizon">
           <div className={styles.titleBox}>
-            <h2 className="title one  center">Projetos</h2>
+            <h2 className="title three center">Projetos</h2>
             <p className="text  base center">
               Originalidade e
               <span className="text  yellow center"> dedicação</span> em cada
