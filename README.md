@@ -1,8 +1,17 @@
-# React + Vite
+# Portifólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primeira versão do portfólio
 
-Currently, two official plugins are available:
+<h2>Configuração do ambiente</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Dentro do diretório, abra o terminal e instale as dependências necessárias para rodar a aplicação localmente:
+
+```shell
+npm install
+```
+
+2. Para Rodar a aplicação utilize o comando abaixo:
+
+```shell
+npm run dev
+```
